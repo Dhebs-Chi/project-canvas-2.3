@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas Drawing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Canvas Shape Drawer</h1>
+
+    <div class="controls">
+      <label for="shapeSelect">Shape:</label>
+      <select id="shapeSelect">
+        <option value="rectangle">Rectangle</option>
+        <option value="pentagon">Pentagon</option>
+        <option value="hexagon">Hexagon</option>
+        <option value="heptagon">Heptagon</option>
+        <option value="octagon">Octagon</option>
+        <option value="nonagon">Nonagon</option>
+        <option value="decagon">Decagon</option>
+
+        
+        <!-- <option value="circle">Circle</option> -->
+      </select>
+
+      <label for="colorPicker">Color:</label>
+      <input type="color" id="colorPicker" value="#000000">
+
+      <label for="strokeWidthInput">Stroke Width:</label>
+      <input type="number" id="strokeWidthInput" value="1" min="1">
+
+      <label for="borderRadiusInput">Border Radius:</label>
+      <input type="number" id="borderRadiusInput" value="0" min="0">
+
+      <button id="rotate-button">Rotate</button>
+      <button id="saveButton">Save</button>
+    </div>
+
+    <canvas id="canvas"></canvas>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
